@@ -1,0 +1,13 @@
+img#react-pay {
+  height: 300px;
+}
+.align-middle {
+  vertical-align: middle!important;
+}
+#model-couple {
+  height: 280px;
+}
+div.side-by-side {
+  float: left;
+  width: 50%;
+}

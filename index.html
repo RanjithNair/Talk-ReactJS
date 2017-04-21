@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/slide.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +25,121 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>ReactJS</h1>
+					<h3>Time to React</h3>
+					<p>
+						<small>Created by <a href="https://ranjithnair.github.io">Ranjith Nair</a></small>
+					</p>
+				</section>
+				<section>
+					<section>
+						<img src="https://cdn.meme.am/cache/instances/folder196/500x/76681196/mohanlal-why-why-react.jpg"></img>
+					</section>
+					<section>
+						<img src="https://cdn.meme.am/cache/instances/folder287/500x/76681287/raga-paper-i-can-put-on-my-resume-and-be-valuable.jpg/" />
+					</section>
+					<section>
+						<img src="https://cdn.meme.am/cache/instances/folder326/500x/76681326/ajit-money-money-money-better-salary-package.jpg" />
+						<img id="react-pay" src="http://i.imgur.com/wIFvki7.png" />
+					</section>
+					<section>
+						<img src="https://cdn.meme.am/cache/instances/folder399/500x/76440399/buzz-lightyear-2-javascript-javascript-everywhere.jpg" />
+						<img id="react-pay" src="http://i.imgur.com/r1OOtx3.png" />
+					</section>
+					<section>
+						<h4>Why so complex !</h4>
+						<img src="https://cdn.meme.am/cache/instances/folder485/500x/76681485/rajinikanth-why-should-i-learn-soething-whichtakes-around-20k-files-for-hello-world.jpg" />
+						<img src="https://cdn.meme.am/cache/instances/folder557/500x/76681557/jackie-chan-react-es6-webpack-rollup-reduxmobx.jpg" />
+					</section>
+				</section>
+				<section>
+					<h2>Why React?</h2>
+					<ul>
+						<li>Because it's awesome</li>
+						<li>Concept of Components</li>
+						<li>Undirectional Data Flow</li>
+						<li>Virtual DOM</li>
+						<li>Declarative Programming</li>
+						<li>React Native - Extending to Mobile World</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Composition - React Components</h4>
+					<pre>
+						<code>
+	&lt;div&gt;
+	&nbsp;&lt;Header/&gt;
+	&nbsp;&lt;AccountSummary/&gt;
+	&nbsp;&lt;AccountDetail/&gt;
+	&nbsp;&lt;Footer/&gt;
+	&lt;/div&gt;
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h4>Unidirectional Dataflow</h4>
+					<p>UI gets updated when the state gets updated.</p>
+					<pre>
+						<code>fn(state) = UI</code>
+					</pre>
+					<img src="https://cdn-images-1.medium.com/max/800/1*lZM0yU9ExEMd7DggVxXkxA.png" />
+				</section>
+				<section>
+					<h4>Why 1-way data flow?</h4>
+					<video class="align-middle" autoplay width="320" height="540" loop>
+					  <source src="https://video.twimg.com/tweet_video/C03dwYIWQAA8Dfp.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+					</video>
+					<img class="align-middle" id="model-couple" src="https://www.cabotsolutions.com/wp-content/uploads/2017/01/MVC-design-pattern-01.png" />
+				</section>
+				<section>
+					<h4>Why 1-way data flow?</h4>
+					<img src="http://i.imgur.com/2kbF4Ill.png" />
+				</section>
+				<section>
+					<h4>1-way vs Bi-Directional</h4>
+					<p data-height="265" data-theme-id="0" data-slug-hash="QvNmQw" data-default-tab="html,result" data-user="ranjithnair" data-embed-version="2" data-pen-title="Angular - 2 way binding" class="codepen">See the Pen <a href="https://codepen.io/ranjithnair/pen/QvNmQw/">Angular - 2 way binding</a> by Ranjith (<a href="http://codepen.io/ranjithnair">@ranjithnair</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<p data-height="260" data-theme-id="0" data-slug-hash="dWMmmK" data-default-tab="js,result" data-user="ranjithnair" data-embed-version="2" data-pen-title="dWMmmK" class="codepen">See the Pen <a href="https://codepen.io/ranjithnair/pen/dWMmmK/">dWMmmK</a> by Ranjith (<a href="http://codepen.io/ranjithnair">@ranjithnair</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+				</section>
+				<section>
+					<h4>Virtual DOM</h4>
+					<pre>
+						<code>Current State - Previous State = Δ</code>
+					</pre>
+					<img src="http://lh4.ggpht.com/-C-F-YJ1BkxI/VHsE7N7U-jI/AAAAAAAAFTc/BtKDLeFxpPU/image_thumb%25255B37%25255D.png?imgmax=800" />
+				</section>
+				<section>
+					<h4>Why VDOM is fast?</h4>
+					<ul>
+						<li>Batched DOM Read/Write Operations</li>
+						<li>Effecient update of subtree only</li>
+					</ul>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/z5e7kWSHWTg" frameborder="0" allowfullscreen></iframe>
+				</section>
+				<section>
+					<h4>Declarative vs Imperative</h4>
+					<div class="side-by-side">
+						<h4>Declarative</h4>
+						<img src="https://cdn.meme.am/cache/instances/folder846/500x/76693846/narendra-modi-2-implement-demonetization.jpg" />
+					</div>
+					<div class="side-by-side">
+						<h4>Imperative</h4>
+						<ul>
+							<li>Send notice about old currency being illegal</li>
+							<li>Pull out old currencies from ATM's</li>
+							<li>Calibrate ATM machines</li>
+							<li>Put new currency in ATM</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h4>Declarative vs Imperative</h4>
+					<p data-height="392" data-theme-id="0" data-slug-hash="LyNmro" data-default-tab="js" data-user="ranjithnair" data-embed-version="2" data-pen-title="Declarative vs Imperative" class="codepen">See the Pen <a href="https://codepen.io/ranjithnair/pen/LyNmro/">Declarative vs Imperative</a> by Ranjith (<a href="http://codepen.io/ranjithnair">@ranjithnair</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+				</section>
 			</div>
 		</div>
 
